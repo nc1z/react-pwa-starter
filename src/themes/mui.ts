@@ -3,7 +3,7 @@ import { createTheme, responsiveFontSizes } from "@mui/material/styles"
 export enum ThemeColors {
     background = "#30363d",
     primary = "#232323",
-    secondary = "#078080",
+    secondary = "#8EBBFF",
     tertiary = "#f8f5f2",
     success = "#57CA22",
     warning = "#FFA319",
@@ -53,13 +53,13 @@ let theme = createTheme({
                 root: {
                     color: ThemeColors.white,
                     "&.Mui-selected": {
-                        color: ThemeColors.warning,
+                        color: ThemeColors.secondary,
                     },
                 },
                 label: {
                     color: ThemeColors.white,
                     "&.Mui-selected": {
-                        color: ThemeColors.warning,
+                        color: ThemeColors.secondary,
                     },
                 },
             },
