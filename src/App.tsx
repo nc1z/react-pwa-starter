@@ -3,6 +3,7 @@ import { Outlet, useLocation, useNavigate } from "react-router-dom"
 import { CssBaseline, ThemeProvider } from "@mui/material"
 
 import theme from "./themes/mui"
+import Navbar from "./components/organisms/Navbar/Navbar"
 import { Route } from "./router"
 
 import "./App.css"
@@ -21,6 +22,7 @@ function App() {
         <div className="App">
             <ThemeProvider theme={theme}>
                 <CssBaseline />
+                <Navbar />
                 <Outlet />
             </ThemeProvider>
         </div>
