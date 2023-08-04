@@ -1,7 +1,7 @@
 import { createTheme, responsiveFontSizes } from "@mui/material/styles"
 
-enum ThemeColors {
-    background = "#f8f5f2",
+export enum ThemeColors {
+    background = "#30363d",
     primary = "#232323",
     secondary = "#078080",
     tertiary = "#f8f5f2",
@@ -38,6 +38,31 @@ let theme = createTheme({
         },
         info: {
             main: ThemeColors.info,
+        },
+    },
+    components: {
+        MuiBottomNavigation: {
+            styleOverrides: {
+                root: {
+                    backgroundColor: ThemeColors.primary,
+                },
+            },
+        },
+        MuiBottomNavigationAction: {
+            styleOverrides: {
+                root: {
+                    color: ThemeColors.white,
+                    "&.Mui-selected": {
+                        color: ThemeColors.warning,
+                    },
+                },
+                label: {
+                    color: ThemeColors.white,
+                    "&.Mui-selected": {
+                        color: ThemeColors.warning,
+                    },
+                },
+            },
         },
     },
 })
