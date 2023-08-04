@@ -7,6 +7,8 @@ import NotFound from "../views/NotFound/NotFound"
 enum Route {
     ROOT = "/",
     HOME = "/home",
+    FAVORITES = "/favorites",
+    ACCOUNT = "/account",
     NOTFOUND = "*",
 }
 

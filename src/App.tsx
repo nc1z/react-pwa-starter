@@ -4,6 +4,7 @@ import { CssBaseline, ThemeProvider } from "@mui/material"
 
 import theme from "./themes/mui"
 import Navbar from "./components/organisms/Navbar/Navbar"
+import BottomNav from "./components/organisms/BottomNav/BottomNav"
 import { Route } from "./router"
 
 import "./App.css"
@@ -24,6 +25,7 @@ function App() {
                 <CssBaseline />
                 <Navbar />
                 <Outlet />
+                <BottomNav />
             </ThemeProvider>
         </div>
     )
