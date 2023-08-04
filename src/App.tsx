@@ -23,9 +23,11 @@ function App() {
         <div className="App">
             <ThemeProvider theme={theme}>
                 <CssBaseline />
-                <Navbar />
-                <Outlet />
-                <BottomNav />
+                <div className="AppContainer">
+                    <Navbar />
+                    <Outlet />
+                    <BottomNav />
+                </div>
             </ThemeProvider>
         </div>
     )
