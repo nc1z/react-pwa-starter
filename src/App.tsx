@@ -1,6 +1,8 @@
 import { useEffect } from "react"
 import { Outlet, useLocation, useNavigate } from "react-router-dom"
+import { CssBaseline, ThemeProvider } from "@mui/material"
 
+import theme from "./themes/mui"
 import { Route } from "./router"
 
 import "./App.css"
@@ -17,7 +19,10 @@ function App() {
 
     return (
         <div className="App">
-            <Outlet />
+            <ThemeProvider theme={theme}>
+                <CssBaseline />
+                <Outlet />
+            </ThemeProvider>
         </div>
     )
 }
