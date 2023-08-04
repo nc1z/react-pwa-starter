@@ -3,22 +3,24 @@ This is a Progressive Web App (PWA) built with Create-React-App and Firebase
 
 ## Getting started
 
-Clone the repository and navigate into the directory
+1. Clone the repository and navigate into the directory
 
-```bash
-git clone https://github.com/nc1z/react-pwa-starter
-cd react-pwa-starter/
-```
+    ```bash
+    git clone https://github.com/nc1z/react-pwa-starter
+    cd react-pwa-starter/
+    ```
 
-Run the command
+2. Create a `.env` file with the required environment variables.
 
-```bash
-npm install
-```
+3. Run the command
 
-Start the server
+    ```bash
+    npm install
+    ```
 
-```bash
-npm start
-```
+4. Start the server
+
+    ```bash
+    npm start
+    ```
 
