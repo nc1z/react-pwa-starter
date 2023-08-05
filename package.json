@@ -40,8 +40,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy:dev": "firebase hosting:channel:deploy development",
-    "deploy:prod": "firebase deploy",
+    "deploy:dev": "npm run build && firebase hosting:channel:deploy development",
+    "deploy:prod": "npm run build && firebase deploy",
     "deploy:list": "firebase hosting:channel:list"
   },
   "eslintConfig": {
