@@ -93,4 +93,6 @@ Take a look at the `src/views/Home` component for reference.
 
 For style customizations, check out `src/App.css`.
 
+## Contributing
 
+We welcome contributions to the React PWA Create-React-App Starter. If you have ideas for enhancements, bug fixes, or documentation improvements, please don't hesitate to submit a pull request. Kindly adhere to the guidelines provided in the `CONTRIBUTING.md` file for a smooth contribution process.
