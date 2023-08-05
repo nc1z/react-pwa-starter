@@ -1,3 +1,8 @@
+:root {
+  --navbar-height: 60px;
+  --bottom-nav-height: 76px;
+}
+
 .App {
   position: fixed;
   top: 0;
@@ -13,9 +18,8 @@
 }
 
 .AppContainer {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  position: relative;
+  height: 100vh;
 
   touch-action: none;
   overflow: hidden;
@@ -23,16 +27,19 @@
 }
 
 .PageContainer {
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 
-  max-height: 100vh;
+  position: fixed;
+  top: var(--navbar-height);
+  bottom: var(--bottom-nav-height);
+  width: 100vw;
+
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  padding: 1rem 1rem 25vh 1rem;
+  padding: 1rem 1rem 2rem 1rem;
   background-color: #30363d;
 }
 
@@ -44,10 +51,4 @@
   padding: 1rem;
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-
-@media screen and (max-height: 768px) {
-  .PageContainer {
-    padding-bottom: 40vh;
-  }
 }
