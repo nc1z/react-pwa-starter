@@ -45,6 +45,7 @@ let theme = createTheme({
             styleOverrides: {
                 root: {
                     backgroundColor: "rgb(35,35,35, 0.95)",
+                    marginBottom: "1rem",
                 },
             },
         },
