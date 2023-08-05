@@ -19,7 +19,7 @@ let theme = createTheme({
     },
     palette: {
         background: {
-            default: ThemeColors.background,
+            default: ThemeColors.primary,
         },
         primary: {
             main: ThemeColors.primary,

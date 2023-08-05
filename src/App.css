@@ -33,6 +33,7 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   padding: 1rem 1rem 25vh 1rem;
+  background-color: #30363d;
 }
 
 .ArrayContainer {
@@ -43,4 +44,10 @@
   padding: 1rem;
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+@media screen and (max-height: 768px) {
+  .PageContainer {
+    padding-bottom: 40vh;
+  }
 }
