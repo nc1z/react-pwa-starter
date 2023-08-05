@@ -4,12 +4,20 @@ This is an opinionated Progressive Web App (PWA) starter. This template focuses 
 ## Tech Stack
 React PWA with Material UI and Firebase
 
+## Preview
+
+No overscroll or mismatching status bars, looks just like a native mobile application! 😊
+
+<img src="https://github.com/nc1z/react-pwa-starter/assets/111836326/e978cb85-3a52-47d9-a406-490c1d393f8c" alt="pwa-result" width="300">
+
 ## Getting Started
+
+Reference: https://www.npmjs.com/package/cra-template-firebase-pwa-starter
 
 ### Local Development
 Follow these steps to set up the project for local development:
 
-1. After completing the Firebase setup, run the command to spin up the PWA starter:
+1. Run the command to spin up the PWA starter:
     ```bash
     npx create-react-app my-app --template cra-template-firebase-pwa-starter
     ```
