@@ -1,0 +1,42 @@
+[
+    {
+        "title": "awesome-project",
+        "description": "A collection of amazing tools and resources for developers."
+    },
+    {
+        "title": "react-starter-kit",
+        "description": "A minimalistic and customizable React starter kit for building modern web applications."
+    },
+    {
+        "title": "data-visualization",
+        "description": "A data visualization library for creating interactive charts and graphs with ease."
+    },
+    {
+        "title": "python-utils",
+        "description": "A set of Python utility functions and classes to simplify common tasks in Python programming."
+    },
+    {
+        "title": "machine-learning-algorithms",
+        "description": "An implementation of various machine learning algorithms from scratch in Python."
+    },
+    {
+        "title": "webpack-boilerplate",
+        "description": "A simple Webpack boilerplate for quickly setting up front-end projects with hot reloading."
+    },
+    {
+        "title": "nodejs-api-starter",
+        "description": "A starter template for building Node.js APIs using Express and MongoDB."
+    },
+    {
+        "title": "flutter-login-screen",
+        "description": "A beautiful and responsive login screen UI built with Flutter for mobile apps."
+    },
+    {
+        "title": "design-system",
+        "description": "A design system that provides reusable components and styles for consistent UI across projects."
+    },
+    {
+        "title": "devops-scripts",
+        "description": "A collection of handy scripts for automating common DevOps tasks and workflows."
+    }
+]
