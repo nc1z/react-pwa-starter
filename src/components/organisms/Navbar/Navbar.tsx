@@ -32,7 +32,7 @@ const Navbar = () => {
     }
 
     return (
-        <AppBar position="static" color="primary">
+        <AppBar position="static" color="primary" className={styles.Navbar}>
             <Container maxWidth="xl">
                 <Toolbar
                     disableGutters
