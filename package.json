@@ -39,7 +39,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy:dev": "firebase hosting:channel:deploy development",
+    "deploy:prod": "firebase deploy",
+    "deploy:list": "firebase hosting:channel:list"
   },
   "eslintConfig": {
     "extends": [
