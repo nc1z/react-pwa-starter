@@ -1,24 +1,20 @@
-import React from "react"
+import { Box, Typography } from "@mui/material"
+import mockData from "../../mock/mock-data.json"
 
 const Home = () => {
-    const divArray = Array.from({ length: 20 }, (_, index) => index + 1)
-    // const divArray = Array.from({ length: 1 }, (_, index) => index + 1)
 
     return (
-        <div className="PageContainer HomeContainer">
-            {divArray.map((divNumber) => (
-                <div
-                    key={divNumber}
-                    style={{
-                        width: "100%",
-                        height: "100px",
-                        border: "1px solid white",
-                    }}
+        <Box className="PageContainer">
+            {mockData.map((item) => (
+                <Box
+                    key={item.title}
+                    className="ArrayContainer"
                 >
-                    Content
-                </div>
+                    <Typography variant="subtitle1" fontWeight="bold">{item.title}</Typography>
+                    <Typography variant="body2">{item.description}</Typography>
+                </Box>
             ))}
-        </div>
+        </Box>
     )
 }
 

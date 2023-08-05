@@ -44,7 +44,7 @@ let theme = createTheme({
         MuiBottomNavigation: {
             styleOverrides: {
                 root: {
-                    backgroundColor: ThemeColors.primary,
+                    backgroundColor: "rgb(35,35,35, 0.95)",
                 },
             },
         },

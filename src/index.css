@@ -8,6 +8,7 @@ body {
 
   touch-action: none;
   overflow: hidden;
+  overscroll-behavior: none;
 }
 
 code {
