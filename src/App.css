@@ -1,6 +1,12 @@
 :root {
     --navbar-height: 60px;
     --bottom-nav-height: 76px;
+
+    --text-color: #ffffff;
+    --selected-text-color: #8ebbff;
+    --navbar-background: #232323;
+    --bottom-nav-background: rgb(35, 35, 35, 0.95);
+    --main-content-body-background: #30363d;
 }
 
 .App {
@@ -40,7 +46,7 @@
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     padding: 1rem 1rem 2rem 1rem;
-    background-color: #30363d;
+    background-color: var(--main-content-body-background);
 }
 
 .ArrayContainer {
