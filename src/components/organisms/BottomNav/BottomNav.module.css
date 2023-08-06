@@ -5,5 +5,5 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    background-color: rgb(35, 35, 35, 0.95);
+    background-color: var(--bottom-nav-background);
 }

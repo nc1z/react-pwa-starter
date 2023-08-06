@@ -41,10 +41,18 @@ let theme = createTheme({
         },
     },
     components: {
+        MuiAppBar: {
+            styleOverrides: {
+                root: {
+                    color: 'var(--text-color)',
+                    backgroundColor: 'var(--navbar-background)',
+                },
+            },
+        },
         MuiBottomNavigation: {
             styleOverrides: {
                 root: {
-                    backgroundColor: 'rgb(35,35,35, 0.95)',
+                    backgroundColor: 'var(--bottom-nav-background)',
                     marginBottom: '1.25rem',
                 },
             },
@@ -52,15 +60,15 @@ let theme = createTheme({
         MuiBottomNavigationAction: {
             styleOverrides: {
                 root: {
-                    'color': ThemeColors.white,
+                    'color': 'var(--text-color)',
                     '&.Mui-selected': {
-                        color: ThemeColors.secondary,
+                        color: 'var(--selected-text-color)',
                     },
                 },
                 label: {
-                    'color': ThemeColors.white,
+                    'color': 'var(--text-color)',
                     '&.Mui-selected': {
-                        color: ThemeColors.secondary,
+                        color: 'var(--selected-text-color)',
                     },
                 },
             },
