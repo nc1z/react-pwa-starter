@@ -3,28 +3,28 @@
 
 name: Deploy to Firebase Hosting Preview on merge
 'on':
-  push:
-    branches:
-      - main
+    push:
+        branches:
+            - main
 jobs:
-  build_and_deploy:
-    runs-on: ubuntu-latest
-    environment: DEV
-    env:
-      REACT_APP_FIREBASE_APIKEY: '${{ secrets.REACT_APP_FIREBASE_APIKEY }}'
-      REACT_APP_FIREBASE_DOMAIN: '${{ secrets.REACT_APP_FIREBASE_DOMAIN }}'
-      REACT_APP_FIREBASE_PROJECTID: '${{ secrets.REACT_APP_FIREBASE_PROJECTID }}'
-      REACT_APP_FIREBASE_STORAGEBUCKET: '${{ secrets.REACT_APP_FIREBASE_STORAGEBUCKET }}'
-      REACT_APP_FIREBASE_SENDERID: '${{ secrets.REACT_APP_FIREBASE_SENDERID }}'
-      REACT_APP_FIREBASE_APPID: '${{ secrets.REACT_APP_FIREBASE_APPID }}'
-    steps:
-      - uses: actions/checkout@v2
-      - run: |
-          git clean -ffdx
-          npm ci && npm run build
-      - uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_REACT_PWA_STARTER }}'
-          channelId: development
-          projectId: react-pwa-starter
+    build_and_deploy:
+        runs-on: ubuntu-latest
+        environment: DEV
+        env:
+            REACT_APP_FIREBASE_APIKEY: '${{ secrets.REACT_APP_FIREBASE_APIKEY }}'
+            REACT_APP_FIREBASE_DOMAIN: '${{ secrets.REACT_APP_FIREBASE_DOMAIN }}'
+            REACT_APP_FIREBASE_PROJECTID: '${{ secrets.REACT_APP_FIREBASE_PROJECTID }}'
+            REACT_APP_FIREBASE_STORAGEBUCKET: '${{ secrets.REACT_APP_FIREBASE_STORAGEBUCKET }}'
+            REACT_APP_FIREBASE_SENDERID: '${{ secrets.REACT_APP_FIREBASE_SENDERID }}'
+            REACT_APP_FIREBASE_APPID: '${{ secrets.REACT_APP_FIREBASE_APPID }}'
+        steps:
+            - uses: actions/checkout@v2
+            - run: |
+                  git clean -ffdx
+                  npm ci && npm run build
+            - uses: FirebaseExtended/action-hosting-deploy@v0
+              with:
+                  repoToken: '${{ secrets.GITHUB_TOKEN }}'
+                  firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_REACT_PWA_STARTER }}'
+                  channelId: development
+                  projectId: react-pwa-starter

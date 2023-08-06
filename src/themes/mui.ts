@@ -1,21 +1,21 @@
-import { createTheme, responsiveFontSizes } from "@mui/material/styles"
+import {createTheme, responsiveFontSizes} from '@mui/material/styles'
 
 export enum ThemeColors {
-    background = "#30363d",
-    primary = "#232323",
-    secondary = "#8EBBFF",
-    tertiary = "#f8f5f2",
-    success = "#57CA22",
-    warning = "#FFA319",
-    error = "#FF1943",
-    info = "#33C2FF",
-    black = "#223354",
-    white = "#ffffff",
+    background = '#30363d',
+    primary = '#232323',
+    secondary = '#8EBBFF',
+    tertiary = '#f8f5f2',
+    success = '#57CA22',
+    warning = '#FFA319',
+    error = '#FF1943',
+    info = '#33C2FF',
+    black = '#223354',
+    white = '#ffffff',
 }
 
 let theme = createTheme({
     typography: {
-        fontFamily: ["proxima-nova", "sans-serif"].join(","),
+        fontFamily: ['proxima-nova', 'sans-serif'].join(','),
     },
     palette: {
         background: {
@@ -44,22 +44,22 @@ let theme = createTheme({
         MuiBottomNavigation: {
             styleOverrides: {
                 root: {
-                    backgroundColor: "rgb(35,35,35, 0.95)",
-                    marginBottom: "1.25rem",
+                    backgroundColor: 'rgb(35,35,35, 0.95)',
+                    marginBottom: '1.25rem',
                 },
             },
         },
         MuiBottomNavigationAction: {
             styleOverrides: {
                 root: {
-                    color: ThemeColors.white,
-                    "&.Mui-selected": {
+                    'color': ThemeColors.white,
+                    '&.Mui-selected': {
                         color: ThemeColors.secondary,
                     },
                 },
                 label: {
-                    color: ThemeColors.white,
-                    "&.Mui-selected": {
+                    'color': ThemeColors.white,
+                    '&.Mui-selected': {
                         color: ThemeColors.secondary,
                     },
                 },

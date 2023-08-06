@@ -1,54 +1,56 @@
 :root {
-  --navbar-height: 60px;
-  --bottom-nav-height: 76px;
+    --navbar-height: 60px;
+    --bottom-nav-height: 76px;
 }
 
 .App {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
-  color: white;
+    color: white;
 
-  touch-action: none;
-  overflow: hidden;
-  overscroll-behavior: none;
+    touch-action: none;
+    overflow: hidden;
+    overscroll-behavior: none;
 }
 
 .AppContainer {
-  position: relative;
-  height: 100vh;
+    position: relative;
+    height: 100vh;
 
-  touch-action: none;
-  overflow: hidden;
-  overscroll-behavior: none;
+    touch-action: none;
+    overflow: hidden;
+    overscroll-behavior: none;
 }
 
 .PageContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 
-  position: fixed;
-  top: var(--navbar-height);
-  bottom: var(--bottom-nav-height);
-  width: 100vw;
+    position: fixed;
+    top: var(--navbar-height);
+    bottom: var(--bottom-nav-height);
+    width: 100vw;
 
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  padding: 1rem 1rem 2rem 1rem;
-  background-color: #30363d;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 1rem 1rem 2rem 1rem;
+    background-color: #30363d;
 }
 
 .ArrayContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 1rem;
-  width: 100%;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+    width: 100%;
+    box-shadow:
+        rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }

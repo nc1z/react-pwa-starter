@@ -1,15 +1,15 @@
-import Box from "@mui/material/Box"
-import BottomNavigation from "@mui/material/BottomNavigation"
-import BottomNavigationAction from "@mui/material/BottomNavigationAction"
-import HomeIcon from "@mui/icons-material/Home"
-import FavoriteIcon from "@mui/icons-material/Favorite"
-import PersonIcon from "@mui/icons-material/Person"
-import { useState } from "react"
-import { useNavigate } from "react-router-dom"
+import Box from '@mui/material/Box'
+import BottomNavigation from '@mui/material/BottomNavigation'
+import BottomNavigationAction from '@mui/material/BottomNavigationAction'
+import HomeIcon from '@mui/icons-material/Home'
+import FavoriteIcon from '@mui/icons-material/Favorite'
+import PersonIcon from '@mui/icons-material/Person'
+import {useState} from 'react'
+import {useNavigate} from 'react-router-dom'
 
-import { Route } from "../../../router"
+import {Route} from '../../../router'
 
-import styles from "./BottomNav.module.css"
+import styles from './BottomNav.module.css'
 
 const BottomNav = () => {
     const [value, setValue] = useState(0)
