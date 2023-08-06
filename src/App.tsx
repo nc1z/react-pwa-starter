@@ -1,21 +1,21 @@
-import { useEffect } from "react"
-import { Outlet, useLocation, useNavigate } from "react-router-dom"
-import { CssBaseline, ThemeProvider } from "@mui/material"
+import {useEffect} from 'react'
+import {Outlet, useLocation, useNavigate} from 'react-router-dom'
+import {CssBaseline, ThemeProvider} from '@mui/material'
 
-import theme from "./themes/mui"
-import Navbar from "./components/organisms/Navbar/Navbar"
-import BottomNav from "./components/organisms/BottomNav/BottomNav"
-import { Route } from "./router"
+import theme from './themes/mui'
+import Navbar from './components/organisms/Navbar/Navbar'
+import BottomNav from './components/organisms/BottomNav/BottomNav'
+import {Route} from './router'
 
-import "./App.css"
+import './App.css'
 
 function App() {
     const navigate = useNavigate()
     const location = useLocation()
 
     useEffect(() => {
-        if (location.pathname === "/") {
-            navigate(Route.HOME, { replace: true })
+        if (location.pathname === '/') {
+            navigate(Route.HOME, {replace: true})
         }
     }, [])
 

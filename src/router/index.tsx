@@ -1,15 +1,15 @@
-import { createBrowserRouter } from "react-router-dom"
+import {createBrowserRouter} from 'react-router-dom'
 
-import App from "../App"
-import Home from "../views/Home/Home"
-import NotFound from "../views/NotFound/NotFound"
+import App from '../App'
+import Home from '../views/Home/Home'
+import NotFound from '../views/NotFound/NotFound'
 
 enum Route {
-    ROOT = "/",
-    HOME = "/home",
-    FAVORITES = "/favorites",
-    ACCOUNT = "/account",
-    NOTFOUND = "*",
+    ROOT = '/',
+    HOME = '/home',
+    FAVORITES = '/favorites',
+    ACCOUNT = '/account',
+    NOTFOUND = '*',
 }
 
 const publicRoutes = [
@@ -33,4 +33,4 @@ const routes = [
 
 const router = createBrowserRouter(routes)
 
-export { router, Route }
+export {router, Route}
